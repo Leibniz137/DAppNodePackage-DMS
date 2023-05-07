@@ -1,14 +1,14 @@
 version: "3.4"
 services:
-  grafana:
-    build:
-      context: grafana
-      args:
-        UPSTREAM_VERSION: 9.3.6
-    image: "grafana.dms.dnp.dappnode.eth:1.0.1"
-    restart: always
-    volumes:
-      - "grafana_data:/var/lib/grafana"
+  # grafana:
+  #   build:
+  #     context: grafana
+  #     args:
+  #       UPSTREAM_VERSION: 9.3.6
+  #   image: "grafana.dms.dnp.dappnode.eth:1.0.1"
+  #   restart: always
+  #   volumes:
+  #     - "grafana_data:/var/lib/grafana"
   prometheus:
     build:
       context: prometheus
